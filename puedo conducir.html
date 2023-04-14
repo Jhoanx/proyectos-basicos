@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+    var puesto = Math.round(Math.random()*14)
+    if(edad >=18 && tieneLicencia =="N"){
+
+        imprimir("Usted puede obtener su licencia");
+        imprimir("Favor pase a reclamarla en el puesto" + puesto);
+
+    }
+    if(edad <18 && tieneLicencia =="N"){
+        imprimir("Usted no puede obtener su licencia");
+    }
+    if(edad >=18 && tieneLicencia =="S"){
+        imprimir("Usted puede conducir");
+    }
+    if(edad <18 && tieneLicencia =="S"){
+        imprimir("Usted no puede conducir aun");
+    }
+
+</script>

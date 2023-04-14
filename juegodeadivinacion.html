@@ -1,0 +1,25 @@
+<meta charset="utf 8">
+
+<h1> JUEGO DE ADIVINACION</h1>
+
+<script>
+    function saltarlinea(){
+        saltarlinea("<br>");
+    }
+    function imprimir(frase){
+        document.write(frase);
+    }
+    var numeropensado =  8//usado para aletorizar un numero 
+    var numerolanzado = parseInt(prompt("ingrese un numero de entre 0-20")); //prompt usado para interactuar con el ususario y parseInt usado para volver numeros en texto a numerico
+
+    if (numeropensado == numerolanzado){
+
+        imprimir("El numero es el correcto");
+        var numerolanzado = parseInt(prompt("ingrese un numero de entre 0-20"));
+    }
+    else{
+
+        imprimir("El numero es el incorrecto");
+    }
+
+</script>
